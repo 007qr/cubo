@@ -14,6 +14,21 @@ const config: Config = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
     },
+    animation: {
+      marquee: 'marquee 5000ms linear infinite',
+      marquee2: 'marquee2 5000ms linear infinite',
+
+    },
+    keyframes: {
+      marquee: {
+        '0%': { transform: 'translateY(0%)' },
+        '100%': { transform: 'translateY(-100%)' },
+      },
+      marquee2: {
+        '0%': { transform: 'translateY(-100%)' },
+        '100%': { transform: 'translateY(0%)' },
+      },
+    },
   },
   plugins: [],
 }
